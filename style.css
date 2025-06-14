@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-image: url('mateus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.titulo{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    z-index: -1;
+
+    font-size: 40px;
+    color: #f8e1e1;
+   }
+
+.conteudo{
+    padding: 100px;
+    background-color: #f3e2e2;
+}
+
+.conteudo h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.conteudo p{
+    font-size: 1.5em;
+}
+
+section.ondas-box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.onda{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(img/wave.png);
+    background-size: 1000px 100px;
+
+    animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+
+@keyframes ondaAnimada {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+#onda1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400;
+}
+#onda2{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+#onda3{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+#onda4{
+    z-index: 997;
+    opacity: 0.8;
+    background-position-x: 100px;
+}
+
+p {
+    margin-top: 0;
+}
+
+.container > div {
+    cursor: pointer;
+    display: block;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+  
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+  margin-top: 2px;
+  margin-top: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font: bolder;
+
+  background: linear-gradient(45deg, #fbfefb, #f4f6f3, #e8eae8,#f3f5f3);
+  background-size: 400% 100%;
+  animation: degrade 10s linear infinite alternate;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  outline: none;
+}
+
+@keyframes degrade {
+  0%{
+      background-position-x: 0%;
+  }
+
+  100%{
+      background-position: 400%;
+  }
+
+p{
+  font-size: 16px;
+  color: green;
+}
+
+.texto{
+    font-size: 30px;
+    text-transform: uppercase;
+
+    background: linear-gradient(45deg, #638ED1, #ff0000, #009688,#44E3D3);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    outline: none;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
